@@ -6,10 +6,12 @@ import { AppComponent } from './app.component';
 import { CoursesComponent } from './courses.component';
 import { CourseComponent } from './course/course.component';
 import { CoursesService } from './courses.service';
+import { FormsModule } from '@angular/forms';
+import { SummaryPipe } from './summary.pipe';
 
 @NgModule({
-  declarations: [AppComponent, CoursesComponent, CourseComponent],
-  imports: [BrowserModule, AppRoutingModule],
+  declarations: [AppComponent, CoursesComponent, CourseComponent, SummaryPipe],
+  imports: [BrowserModule, AppRoutingModule, FormsModule],
   providers: [CoursesService],
   bootstrap: [AppComponent],
 })
