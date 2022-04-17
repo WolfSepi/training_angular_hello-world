@@ -1,8 +1,8 @@
-<h1>Angular</h1>
+<!-- <h1>Angular</h1>
 <courses></courses>
-<br>
-<favorite [isFavorite]="post.isFavorite"></favorite>
-<br>
+<br> -->
+<favorite [isFavorite]="post.isFavorite"  (change)="onFavoriteChanged()"></favorite>
+<!-- <br>
 <input type="text" [(ngModel)]="title">
 <br>
-{{ title | titleCase }}
+{{ title | titleCase }} -->
